@@ -9,9 +9,9 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 public class EkycEurekaServerApplication {
 
 	public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(EkycEurekaServerApplication.class);
+        //SpringApplication app = new SpringApplication(EkycEurekaServerApplication.class);
   //      app.addListeners(new ApplicationPidFileWriter());
-        app.run(args);
+        SpringApplication.run(EkycEurekaServerApplication.class, args);
 
 	}
 }
