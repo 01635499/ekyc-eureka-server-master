@@ -3,7 +3,7 @@ package com.hkt.ekyc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
-import import org.springframework.boot.system.ApplicationPidFileWriter;
+import org.springframework.boot.system.ApplicationPidFileWriter;
 
 @EnableEurekaServer
 @SpringBootApplication
