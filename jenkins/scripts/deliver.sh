@@ -24,5 +24,5 @@ echo 'The following command runs and outputs the execution of your Java'
 echo 'application (which Jenkins built using Maven) to the Jenkins UI.'
 set -x
 #java -jar target/${NAME}-${VERSION}.jar
-mvn spring-boot:run & echo $! > ./pid.file
-sh "pid=\$(lsof -i:8761 -t); kill -TERM \$pid || kill -KILL \$pid"
+mvn spring-boot:run
+
