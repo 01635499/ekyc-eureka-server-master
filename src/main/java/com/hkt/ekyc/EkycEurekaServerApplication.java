@@ -1,9 +1,9 @@
-pacakage com.hkt.ekyc;
+package com.hkt.ekyc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
-//import org.springframework.boot.context.ApplicationPidFileWriter;
+import org.springframework.boot.context.ApplicationPidFileWriter;
 
 
 @EnableEurekaServer
@@ -11,9 +11,9 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 public class EkycEurekaServerApplication {
 
 	public static void main(String[] args) {
-        //SpringApplication app = new SpringApplication(EkycEurekaServerApplication.class);
-  //      app.addListeners(new ApplicationPidFileWriter());
-        SpringApplication.run(EkycEurekaServerApplication.class, args);
+        SpringApplication app = new SpringApplication(EkycEurekaServerApplication.class);
+        app.addListeners(new ApplicationPidFileWriter());
+        app.run(args);
 
 	}
 }
